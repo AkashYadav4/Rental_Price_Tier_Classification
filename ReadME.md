@@ -1,4 +1,4 @@
-## 🏠 Rental Price Tier Classification
+# 🏠 Rental Price Tier Classification
 
 A machine learning project to classify rental apartment listings into **Low**, **Medium**, and **High** pricing tiers using real-world data and multiple supervised learning models.
 
