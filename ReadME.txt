@@ -1,45 +1,128 @@
-# Regarding the Dataset:
-Original dataset: rentalApartments_data.csv
-After data cleaning and pre-processing: cleanedApartments_data.xlsx
-After handling outliers (final dataset for model training and testing): FinalApartments_data.csv
 
-# Data Cleaning:
-Data cleaning and handling of missing values were performed using the file: rentalAnalysis.ipynb.
-You can run this notebook directly. Before running, ensure that the dataset paths specified in the code are correct.
+# 🏠 Rental Price Tier Classification
 
-# Exploratory Data Analysis (EDA):
-All EDA coding is available in rentalprice-visualization.ipynb.
-You can either run this notebook directly or view all the required visualizations in the project_visualization folder.
+A machine learning project to classify rental apartment listings into **Low**, **Medium**, and **High** pricing tiers using real-world data and multiple supervised learning models.
 
-# Outlier Detection and Handling:
-Outlier detection and handling were performed using: outlier_handling.ipynb.
-You can run this notebook directly, or review all outlier detection and handling visualizations within the notebook itself or in the project_visualization folder.
+---
 
-# Model Selection:
-We trained the dataset using six different models:
-- KNN
-- Random Forest
-- Decision Tree
-- Logistic Regression
-- Naive Bayes
-- AdaBoost
+## 📁 Project Structure
 
-# Model notebook files:
-Random_Forest_and_Decision_Tree.ipynb
-Naive_Bayes_and_AdaBoost.ipynb
-Logistic_Regression.ipynb
-KNN.ipynb
+```
+📊 rentalApartments_data.csv         → Original dataset  
+🧼 cleanedApartments_data.xlsx       → After cleaning + preprocessing  
+📉 FinalApartments_data.csv          → Final dataset (after outlier handling)
 
-# Model Visualizations
-All required model visualizations are saved in the project_visualization folder and are also available within each notebook. 
-These include:
+📒 rentalAnalysis.ipynb              → Data cleaning, preprocessing  
+📒 rentalprice-visualization.ipynb   → EDA (visualizations & plots)  
+📒 outlier_handling.ipynb            → Outlier detection & treatment  
+
+📒 Random_Forest_and_Decision_Tree.ipynb  
+📒 Naive_Bayes_and_AdaBoost.ipynb    
+📒 Logistic_Regression.ipynb         
+📒 KNN.ipynb                          → Model training & evaluation  
+
+📁 project_visualization/            → Confusion matrix, ROC, importance plots  
+📄 Rental_Price_Tier_Classification_Report.pdf  
+🎓 RentalPriceTierClassification.pptx  
+```
+
+---
+
+## 🔍 Project Overview
+
+We built and evaluated classification models to predict rental price tiers based on features like:
+- Square footage
+- Number of bedrooms & bathrooms
+- Amenities
+- Neighborhood/city
+
+---
+
+## 📦 Models Used
+
+- **K-Nearest Neighbors (KNN)**
+- **Random Forest & Decision Tree**
+- **Logistic Regression**
+- **Naive Bayes**
+- **AdaBoost**
+
+Each model was evaluated using:
 - Confusion Matrix
-- ROC Curve
-- Feature Importance
+- ROC-AUC Curve
+- Classification Report
+- Cross-Validation Accuracy
 
-# Notes
-Before running any code, ensure that the dataset file paths in the notebooks are correct.
-Some code sections may take time to execute.
-All steps and results are documented and visualized within the respective notebooks for easy reference.
+---
 
-Thank you.
+## 📈 Workflow Breakdown
+
+| Step                        | Notebook                         | Description                                      |
+|-----------------------------|----------------------------------|--------------------------------------------------|
+| Data Cleaning               | `rentalAnalysis.ipynb`           | Imputation, transformations, type conversion     |
+| EDA                         | `rentalprice-visualization.ipynb`| Distributions, correlations, pair plots          |
+| Outlier Handling            | `outlier_handling.ipynb`         | Z-score/IQR, visual checks                       |
+| Model Training              | See individual model notebooks   | Each model has its own `.ipynb` with metrics     |
+| Final Evaluation            | Visuals in `project_visualization/` | Confusion matrix, ROC, feature importances   |
+
+---
+
+## 🧠 Key Highlights
+
+- Applied **SMOTE** to balance class distribution
+- Performed **feature scaling** & **label encoding**
+- Used **GridSearchCV** for model optimization
+- Reduced dimensionality using **PCA**
+- Delivered clean visual comparisons across models
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python 3**
+- **scikit-learn**
+- **pandas, numpy**
+- **seaborn, matplotlib**
+- **imbalanced-learn**
+- **Jupyter Notebook**
+
+---
+
+## 🏁 How to Run
+
+1. Clone the repo:
+```bash
+git clone https://github.com/your-username/rental-price-tier-classification.git
+cd rental-price-tier-classification
+```
+
+2. (Optional) Create virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate   # or venv\Scripts\activate on Windows
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+4. Launch notebooks in Jupyter:
+```bash
+jupyter notebook
+```
+
+✅ Before running, **ensure file paths in code match your local directory structure.**
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🙋‍♂️ Author
+
+**Akash Kumar Yadav**  
+MS in Computer Science, Fordham University  
+🔗 [LinkedIn](https://www.linkedin.com/in/akash-yadav-66b211180/) | 🖥️ [GitHub](https://github.com/your-username)
