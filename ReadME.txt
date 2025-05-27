@@ -1,5 +1,4 @@
-
-# 🏠 Rental Price Tier Classification
+## 🏠 Rental Price Tier Classification
 
 A machine learning project to classify rental apartment listings into **Low**, **Medium**, and **High** pricing tiers using real-world data and multiple supervised learning models.
 
@@ -91,7 +90,7 @@ Each model was evaluated using:
 
 1. Clone the repo:
 ```bash
-git clone https://github.com/your-username/rental-price-tier-classification.git
+git clone https://github.com/AkashYadav4/rental-price-tier-classification.git
 cd rental-price-tier-classification
 ```
 
@@ -125,4 +124,4 @@ This project is licensed under the MIT License.
 
 **Akash Kumar Yadav**  
 MS in Computer Science, Fordham University  
-🔗 [LinkedIn](https://www.linkedin.com/in/akash-yadav-66b211180/) | 🖥️ [GitHub](https://github.com/your-username)
+🔗 [LinkedIn](https://www.linkedin.com/in/akash-yadav-66b211180/) | 🖥️ [GitHub](https://github.com/AkashYadav4)
