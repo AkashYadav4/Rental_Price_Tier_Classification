@@ -124,4 +124,4 @@ This project is licensed under the MIT License.
 
 **Akash Kumar Yadav**  
 MS in Computer Science, Fordham University  
-🔗 [[LinkedIn](https://www.linkedin.com/in/akash-yadav-66b211180/)] | 🖥️ [[GitHub](https://github.com/AkashYadav4)]
+🔗 [[LinkedIn](https://www.linkedin.com/in/akash-yadav-66b211180)] | 🖥️ [[GitHub](https://github.com/AkashYadav4)]
